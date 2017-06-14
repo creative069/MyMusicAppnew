@@ -1,62 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context="com.example.android.mymusicapp.MainActivity">
+    android:background="@color/colorAccent"
+    tools:context="com.example.android.robmusic.MainActivity">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="10dp"
-        android:background="#2197F3"
-        android:orientation="horizontal"
-        tools:context="com.example.android.mymusicapp.MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
 
-        <Button
-            android:id="@+id/btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:drawableTop="@drawable/home2"
-            android:text="Home" />
-
-        <Button
-            android:id="@+id/btn2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:drawableTop="@drawable/ic_action_name2"
-            android:text="My Music" />
-
-        <Button
-            android:id="@+id/btn3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:drawableTop="@drawable/discover"
-            android:text="Discover" />
-
-        <Button
-            android:id="@+id/btn4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:drawableTop="@drawable/ic_action_name"
-            android:text="Charts" />
-
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
+    tools:context="com.example.android.robmusic.MainActivity">
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:drawableTop="@drawable/home"
+        android:text="HOME"
+        android:layout_weight="1"
+        />
+    <Button
+        android:id="@+id/btnhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/music"
+        android:text="My music"
+        android:layout_weight="1"
+        />
+    <Button
+        android:id="@+id/discover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/discover"
+        android:text="discover"
+        android:layout_weight="1"
+        />
+    <Button
+        android:id="@+id/charts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/charts"
+        android:text="CHARTS"
+        android:layout_weight="1"
+        />
+
+
+
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#b3e5ff"
         android:fontFamily="sans-serif"
-        android:text="Currently Streaming"
-        android:textColor="#2196F3"
-        android:textStyle="bold" />
+        android:layout_marginLeft="12dp"
+        android:text="Now Playing"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350sp"
+        android:src="@drawable/w1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ARTIST: THE WEEKND"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SONG: CAN'T FEEL MY FACE"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        tools:context="com.example.android.robmusic.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/back"
+        android:paddingTop="15dp"
+        />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/play"
+            android:paddingTop="15dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/next"
+            android:paddingTop="15dp"
+
+            />
+</LinearLayout>
+
 
 
 </LinearLayout>
